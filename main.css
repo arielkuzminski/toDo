@@ -86,3 +86,20 @@ input[type=text]{
   background: #FF8026;
   color: #fff;
 }
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li{
+  border: 1px solid #666;
+  border-top: none;
+  padding: 5px;
+  color: #666;
+}
+
+ul li:first-child{
+  border-top: 1px solid #666;
+}
