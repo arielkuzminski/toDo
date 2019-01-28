@@ -6,9 +6,19 @@ body{
 }
 
 #container{
-  max-width: 900px;
+  min-width: 150px;
+  max-width: 750px;
   max-height: 90%;
   background: #F8F6FA;
   margin: 20px auto 20px auto;
   padding: 20px;
+  border: 1px solid #9E9E9E;
+  border-radius: 2px;
+  box-shadow: 0px 2px 18px 0 rgba(0,0,0,0.75);
+}
+
+h1{
+  font-weight: 500;
+  margin: 0 0 15px 0;
+  letter-spacing: 3px;
 }
