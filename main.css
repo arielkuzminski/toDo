@@ -32,9 +32,15 @@ h2{
   letter-spacing: 3px;
 }
 
+hr{
+  margin: 10px 0 10px 0;
+  width: 100%;
+}
+
 input[type=text]{
   height: 30px;
-  width: 450px;
+  box-sizing:border-box;
+  width: 100%;
   font-size: 20px;
   font-family: 'Montserrat', sans-serif;
   color: #666;
@@ -94,18 +100,26 @@ ul{
 }
 
 ul li{
-  border: 1px solid #666;
+  border: 1px solid #9E9E9E;
   border-top: none;
   padding: 5px;
   color: #666;
 }
 
 ul li:first-child{
-  border-top: 1px solid #666;
+  border-top: 1px solid #9E9E9E;
 }
 
 .fas{
-  color:rgb(233, 121, 113);
-  display: flex;
-  align-self: flex-end;
+  color:rgb(250, 165, 29);
+}
+
+.fas:hover{
+  color:rgb(253, 182, 68);
+}
+
+.link{
+  float: right;
+  margin-right: 15px;
+  cursor: pointer;
 }
