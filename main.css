@@ -103,3 +103,9 @@ ul li{
 ul li:first-child{
   border-top: 1px solid #666;
 }
+
+.fas{
+  color:rgb(233, 121, 113);
+  display: flex;
+  align-self: flex-end;
+}
