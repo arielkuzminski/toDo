@@ -142,4 +142,5 @@ ul li:last-child{
 
 .checkbox{
   margin-right: 10px;
+  outline: none;
 }

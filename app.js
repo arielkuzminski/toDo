@@ -17,8 +17,13 @@ function addToDo(e){
   if(inputEnterTask.value === ''){
     alert('You forgot to add a task');
   } else {
+    const box = document.createElement('input');
+    box.setAttribute('type', 'checkbox');
+    box.className = 'checkbox';
+
     const li = document.createElement('li');
     li.className = 'item';
+    li.appendChild(box);
     li.appendChild(document.createTextNode(inputEnterTask.value));
 
     const x = document.createElement('a');
@@ -27,6 +32,16 @@ function addToDo(e){
 
     li.appendChild(x);
     list.appendChild(li);
+
+    box.addEventListener('click', checkTask);
+
+    function checkTask(){
+      if(this.checked){
+        li.style = 'background: green;';
+      }else{
+        li.style = 'background: black;';
+      }
+    }
 
     inputEnterTask.value = '';
   }
