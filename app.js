@@ -37,10 +37,10 @@ function addToDo(e){
 
     function checkTask(){
       if(this.checked){
-        li.style = 'background: #9FEE1F;';
+        // li.style = 'background: #9FEE1F;';
         li.style.textDecoration="line-through";
       } else {
-        li.style = 'background: #F8F6FA;';
+        li.style = 'background: #B9ACC2;';
       }
     }
 
