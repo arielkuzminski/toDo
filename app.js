@@ -9,6 +9,7 @@ eventsList();
 function eventsList(){
   form.addEventListener('submit', addToDo);
   list.addEventListener('click', deleteToDo);
+  clearBtn.addEventListener('click', clearList);
 }
 
 function addToDo(e){
@@ -38,5 +39,11 @@ function deleteToDo(e){
     if(confirm('Remove this task?')){
       e.target.parentElement.parentElement.remove();
     }
+  }
+}
+
+function clearList(){
+  if(confirm('Are You sure? This will delete all Your items from the list.')){
+    list.innerHTML = '';
   }
 }
