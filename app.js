@@ -10,6 +10,7 @@ function eventsList(){
   form.addEventListener('submit', addToDo);
   list.addEventListener('click', deleteToDo);
   clearBtn.addEventListener('click', clearList);
+  searchInput.addEventListener('keyup', searchToDo);
 }
 
 function addToDo(e){
@@ -46,4 +47,18 @@ function clearList(){
   if(confirm('Are You sure? This will delete all Your items from the list.')){
     list.innerHTML = '';
   }
+}
+
+function searchToDo(e){
+  const search = e.target.value.toLowerCase();
+  
+  document.querySelectorAll('.item').forEach(function(item) {
+    const task = item.firstChild.textContent;
+
+    if(task.toLowerCase().indexOf(search) != -1) {
+      item.style.display = 'block';
+    } else {
+      item.style.display = 'none';
+    }
+  });
 }
