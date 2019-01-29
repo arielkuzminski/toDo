@@ -139,3 +139,7 @@ ul li:last-child{
   margin-right: 15px;
   cursor: pointer;
 }
+
+.checkbox{
+  margin-right: 10px;
+}
