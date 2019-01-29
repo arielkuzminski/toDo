@@ -37,9 +37,10 @@ function addToDo(e){
 
     function checkTask(){
       if(this.checked){
-        li.style = 'background: green;';
-      }else{
-        li.style = 'background: black;';
+        li.style = 'background: #9FEE1F;';
+        li.style.textDecoration="line-through";
+      } else {
+        li.style = 'background: #F8F6FA;';
       }
     }
 
