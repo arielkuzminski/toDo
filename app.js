@@ -35,6 +35,8 @@ function addToDo(e){
 
 function deleteToDo(e){
   if(e.target.parentElement.classList.contains('link')){
-    console.log('dupa');
+    if(confirm('Remove this task?')){
+      e.target.parentElement.parentElement.remove();
+    }
   }
 }
