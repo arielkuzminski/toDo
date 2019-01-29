@@ -20,6 +20,12 @@ function addToDo(e){
 
     const x = document.createElement('a');
     x.className = 'link';
+    x.innerHTML = '<i class="fas fa-times"></i>';
+
+    li.appendChild(x);
+    list.appendChild(li);
+
+    inputEnterTask.value = '';
   }
 
   e.preventDefault();
