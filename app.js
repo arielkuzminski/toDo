@@ -11,7 +11,16 @@ function eventsList(){
 }
 
 function addToDo(e){
-  console.log('dupa');
+  if(inputEnterTask.value === ''){
+    alert('You forgot to add a task');
+  } else {
+    const li = document.createElement('li');
+    li.className = 'item';
+    li.appendChild(document.createTextNode(inputEnterTask.value));
+
+    const x = document.createElement('a');
+    x.className = 'link';
+  }
 
   e.preventDefault();
 }
