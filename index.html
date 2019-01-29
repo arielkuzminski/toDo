@@ -21,7 +21,7 @@
       </section>
       <section>
         <form id="form">
-          <input type="text" id="task-input" spellcheck="false" placeholder="Enter your task">
+          <input type="text" id="task-input" spellcheck="false" placeholder="Enter your task" onfocus="this.placeholder=''" onblur="this.placeholder='Enter your task'">
           <input type="submit" value="ADD ME!" class="add-task button">
           <hr>
         </form>
@@ -34,7 +34,8 @@
           <ul class="list">
         
           </ul>
-          <input type="text" id="filter" spellcheck="false" placeholder="Search">
+          <input type="text" id="filter" spellcheck="false" placeholder="Search" onfocus="this.placeholder=''"
+          onblur="this.placeholder='Search'">
           <button class="delete-all-items button">CLEAR LIST</button>
         </article>
       </section>

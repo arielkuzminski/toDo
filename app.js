@@ -78,3 +78,7 @@ function searchToDo(e){
     }
   });
 }
+
+document.querySelector('#filter').addEventListener('onfocus', function(){
+  this.placehoder='';
+});
