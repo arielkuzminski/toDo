@@ -8,6 +8,7 @@ eventsList();
 
 function eventsList(){
   form.addEventListener('submit', addToDo);
+  list.addEventListener('click', deleteToDo);
 }
 
 function addToDo(e){
@@ -29,4 +30,11 @@ function addToDo(e){
   }
 
   e.preventDefault();
+}
+
+
+function deleteToDo(e){
+  if(e.target.parentElement.classList.contains('link')){
+    console.log('dupa');
+  }
 }
