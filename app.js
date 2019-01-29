@@ -69,7 +69,7 @@ function searchToDo(e){
   const search = e.target.value.toLowerCase();
   
   document.querySelectorAll('.item').forEach(function(item) {
-    const task = item.firstChild.textContent;
+    const task = item.parentElement.textContent;
 
     if(task.toLowerCase().indexOf(search) != -1) {
       item.style.display = 'block';
