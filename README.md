@@ -1,5 +1,5 @@
 # toDo
-###Application made in pure js
+### Application made in pure js
 Hello! I made this app for my girlfriend who realy likes things well organized :)
 
 Nothing realy special about simple 'to do' list, but for now I'm proud of progres I made since I started learning Javascript.
